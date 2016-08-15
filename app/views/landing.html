@@ -1,0 +1,96 @@
+
+<section id="landing-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive logo" src="img/Logo.png" />
+            </div>
+            <div class="col-md-12">
+                <img class="img-responsive" src="img/research.png" id="research"/>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="text-center intro-text"><strong>Eşti îngrijorat fiindcă nu ştii ce spun rezultatele analizei tale de sânge?</strong></h1>
+            </div>
+        </div>
+        <button class="btn intro-button" ng-click="go('/interpretare')">Află interpretarea</button>
+        <div class="text-center spheres" >
+            &#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />
+        </div>
+    </div>
+</section>
+<!---->
+<section id="tutorial">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="text-center intro-text"><strong>Care analizei de sânge pot fi interpretate?</strong></h1>
+                <h3 class="text-center">Doar Hemoleucograma completa.</h3>
+            </div>
+        </div>
+        <div class="text-center spheres">
+            &#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="text-center intro-text2"><strong>Cum functioneaza?</strong></h1>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <img class="img-responsive img-tutorial" src="img/tutorial1.png" />
+                <p class="tutorial-text text-center">1.Introduci rezultatele analizei de sânge<br/>&#8226;<br />&#8226;</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <img class="img-responsive img-tutorial" src="img/tutorial2.png" />
+                <p class="tutorial-text text-center">2.Calculatorul analizeaza rezulatele tale<br/>&#8226;<br />&#8226;</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <img class="img-responsive img-tutorial" src="img/tutorial3.png" />
+                <p class="tutorial-text text-center">3.Primesti interpretarea</p>
+            </div>
+        </div>
+        <!---->
+        <div class="text-center spheres">
+            &#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />
+        </div>
+    </div>
+</section>
+<!---->
+<section id="inspiration">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="text-center intro-text2"><strong>Corectitudinea interpretarilor</strong></h1>
+            </div>
+            <div class="col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-4">
+                <!---->
+                <h4 class="text-center">Pentru o acuratete cat mai mare posibila<br /> a interpretarilor am consultate urmatoarele surse.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1" ng-class="class">
+                <p class="authors" ng-repeat="source in sources | limitTo : getQuantity()">{{source.author}}, <strong>{{source.book}}</strong>, {{source.edit}}  </p>
+            </div>
+        </div>
+        <button class="btn intro-button my-margins" ng-click="toggle(); changeClass();">Vezi mai multe</button>
+        <h4 class="text-center"><i class="fa fa-exclamation" aria-hidden="true"></i> Interpretarile nu inlocuiesc consulatia unui specialist</h4>
+    </div>
+</section>
+<!---->
+<section id="info">
+    <div class="container">
+        <h1 class="text-center intro-text2"><strong>De ce am realizat acest serviciu?</strong></h1>
+        <h4 class="text-center">Accusamus kitsch dreamcatcher cray echo park, do dolore eu minim<br /> yuccie tempor. Cardigan incididunt slow-carb, pabst<br /> excepteur godard cillum narwhal irure dolore anim deserunt 90's. Gochujang<br /> ennui roof party cupidatat portland thundercats. Cronut mixtape readymade,<br /> four dollar toast gentrify distillery vice non bespoke selfies artisan<br /> minim. Deep v etsy bushwick, vice consequat<br /> offal farm-to-table gochujang pinterest. <br /><br />Tote bag direct trade mumblecore synth mlkshk,<br /> typewriter butcher dolore. Banjo schlitz waistcoat,<br /> brooklyn quinoa 8. Aesthetic ugh sint etsy.<br /><br /> Salvia sustainable meggings, veniam blog drinking vinegar swag shoreditch offal bespoke lo-fi photo booth <br />portland non umami. Stumptown kale chips retro, art party tousled disrupt chia aliqua craft beer shabby chic vero <br />put a bird on it cray. Echo park next level eu, everyday<br /> carry poutine knausgaard +1 mumblecore lo-fi aliquip locavore exercitation drinking vinegar chia consectetur. </h4>
+        <div class="text-center" id="spheres">
+            &#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />&#8226;<br />
+        </div>
+    </div>
+</section>
+<!---->
+<div class="container">
+    <div class="col-md-8 col-md-offset-2">
+        <h1 class="text-center intro-text my-margins"><strong>Afla interpretarea rezulatelor<br /> analizei tale de sange si scapa de griji</strong></h1>
+    </div>
+    <button class="btn intro-button my-margins" ng-click="go('/interpretare')">Află interpretarea</button>
+    <footer-directive />
+</div>

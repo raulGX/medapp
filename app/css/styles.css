@@ -1,0 +1,184 @@
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-Regular.ttf);
+}
+@media (max-width: 768px) { /*media for small screens */
+    h1{
+        font-size: 20px;
+    }
+    .intro-button{
+        width: 10em;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    .paragraph-text{
+        font-size: 14px;
+    }
+    .the-label{
+        font-size: 14px;
+    }
+    .the-label2{
+        font-size: 12px;
+    }
+}
+body{
+    font-family: 'Nunito';
+}
+#landing-page{
+    height: 100vh;
+}
+.logo{
+    padding-top: 5vh;
+    max-height: 12vh; /*max height contains the padding be aware */
+    display: block;
+    margin: 0 auto;
+}
+#research{
+    padding-top: 10vh;
+    max-height: 25vh; /*max height contains the padding be aware */
+    display: block;
+    margin: 0 auto;
+}
+.intro-text{/*landing-page font color*/
+    color: #345b66;
+    padding-top: 5vh;
+}
+.intro-text2{/*tutorial-page font color*/
+    color: #345b66;
+    padding-top: 5vh;
+    padding-bottom: 40px;
+}
+h4{
+    color: #84999f;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+.intro-button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 3vh;
+    font-size: 18px;
+    color: white;
+    background-color: #36dcdc;
+    width: 15em;
+    letter-spacing: 1px;
+    box-shadow:0px 0px 10px 5px #e7e7e7;
+}
+.spheres{
+    padding-top: 10vh;
+}
+.img-tutorial{
+    width: 100%;
+}
+.tutorial-text{
+    font-family: Nunito;
+    font-size:15px;
+    color: #a9bbbf;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.authors{
+    font-family: Nunito;
+    font-size:15px;
+    color: #a9bbbf;
+}
+.faded{
+    background: -webkit-linear-gradient(#a9bbbf, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*add transition here and to normal class
+    also add gradient over the text
+    */
+}
+.normal{
+}
+.my-margins{
+    margin-bottom: 40px;
+}
+.fb{
+    font-weight: bold;
+    color: #77dfd4;
+}
+.navbar{
+      padding-top: 10px;
+      padding-bottom: 20px;
+      background-color: white;
+}
+.navList{
+    font-family: Nunito;
+	font-weight: bold;
+    font-size:15px;
+    color: #345b66 !important;
+}
+.grey-box{
+    padding-bottom: 50px;
+    background-color: #f5f7f7;
+    margin-bottom: 50px;
+}
+.the-label{
+    color: #345b66;
+    font-weight: bold;
+    font-size: 18px;
+}
+.the-label2{
+    color: #345b66;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 40px;
+}
+.paddingb-40{
+    padding-bottom: 40px;
+}
+.input-group-addon {
+    min-width:150px;
+    text-align:center;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #99adb2;
+}
+.input-lg{
+    height: 3em;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.form-group{
+    margin-bottom: 30px;
+}
+.full-width{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    font-size: 25px !important;
+}
+.clinic-img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.clinic-single-img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.clinic-btn{
+    min-width: 77.5%;
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.paragraph-text{
+    font-size: 18px;
+    color: #84999f;
+    font-weight: bold;
+    padding-bottom: 40px;
+}

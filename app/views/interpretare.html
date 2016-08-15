@@ -1,0 +1,132 @@
+
+<div class="container grey-box">
+    <div class="col-md-6 col-md-offset-3">
+        <h1 class="text-center intro-text ">
+            <strong>Introdu informatiile cerute<br/>
+            si afla interpretarea
+            </strong>
+        </h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 paddingb-40">
+            <form role="form">
+                <div class="form-group">
+                    <label class="the-label">Varsta</label>
+                    <input type="number" class="form-control input-lg" placeholder="Introdu varsta ta aici" ng-model="userInfo.age">
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Sexul</label>
+                    <br/>
+                    <label class="radio-inline the-label2">
+                        <input type="radio" id="genderBoxM" value="male" ng-model="userInfo.gender"> Masculin
+                    </label>
+                    <label class="radio-inline the-label2">
+                        <input type="radio"  id="genderBoxF" value="female" ng-model="userInfo.gender"> Feminin
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-6 col-md-offset-3">
+            <form role="form">
+                <div class="form-group">
+                    <label class="the-label">Eritrocite / Hematii</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea ex: 12.5" ng-model="userInfo.values.erit">
+                        <span class="input-group-addon">x milioane/mm<sup>3</sup></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Hemoglobina</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.hemo">
+                        <span class="input-group-addon">g/dl</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Hematrocit</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.hema">
+                        <span class="input-group-addon">%</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Volumul eritrocitar mediu (VEM)</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.averageVem">
+                        <span class="input-group-addon">&mu;<sup>3</sup></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Hemoglobina eritrocitara medie (HEM)</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.averageHem">
+                        <span class="input-group-addon">pg(picograme)</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Concentratia HEM (CHEM)</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.chem">
+                        <span class="input-group-addon">g/dl sau %</span>
+                    </div>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label class="the-label">Leucocite</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.leucocite">
+                        <span class="input-group-addon">x mii/mm<sup>3</sup></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Neutrofile</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.neutrofile">
+                        <span class="input-group-addon">x mii/mm<sup>3</sup></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Limfocite</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.limfocite">
+                        <span class="input-group-addon">x mii/mm<sup>3</sup></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Monocite</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.monocite">
+                        <span class="input-group-addon">x mii/mm<sup>3</sup></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Eozinofile</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.eozinofile">
+                        <span class="input-group-addon">x mii/mm<sup>3</sup></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">Trombocite / Placete</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.trombocite">
+                        <span class="input-group-addon">x mii/mm<sup>3</sup></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="the-label">VSH</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-lg" placeholder="Introdu valoarea" ng-model="userInfo.values.vsh">
+                        <span class="input-group-addon">mm/h</span>
+                    </div>
+                </div>
+            </form>
+            <button class="btn intro-button my-margins full-width" ng-click="viewResults()">Arata-mi intrepretarea</button>
+        </div>
+
+    </div>
+    <footer-directive /> <br/>
+</div>

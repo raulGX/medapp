@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Angular" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="node_modules" />
+      <option name="frameworkVersion" value="" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/node_modules/angular/angular.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/angular/index.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/node_modules/angular/angular.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/angular/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/angular/angular.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,64 @@
+<html>
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analize</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body ng-app="app">
+<!--<div class="navbar-header">-->
+  <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">-->
+	<!--<span class="sr-only">Toggle navigation</span>-->
+	<!--<span class="icon-bar"></span>-->
+	<!--<span class="icon-bar"></span>-->
+	<!--<span class="icon-bar"></span>-->
+  <!--</button>-->
+  <!--<a class="navbar-brand" rel="home" href="#" title="">-->
+	<!--<img style="max-width:100px; margin-top: -7px;"-->
+		 <!--src="img/logo.png">-->
+  <!--</a>-->
+<!--</div>-->
+  <div class="navbar navbar-default navbar-static-top" id="the-navbar" ng-show="showNavbar">
+    <div class="container">
+        <a href="#/" class="navbar-brand"><img style="max-width:100px; margin-top: -7px;" src="img/logo.png"></a>
+        <button type="button" class="navbar-toggle no-margin" data-toggle="collapse" data-target=".navHeaderCollapse"><i class="fa fa-bars grey-bg"></i></button>
+        <div class="collapse navbar-collapse navbar-right navHeaderCollapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#/interpretare" data-toggle="collapse" data-target=".navHeaderCollapse" class="navList">Interpretare</a></li>
+                <li><a href="#/invata" data-toggle="collapse" data-target=".navHeaderCollapse" class="navList">Invata</a></li>
+                <li><a href="#/clinici" data-toggle="collapse" data-target=".navHeaderCollapse" class="navList">Clinici</a></li>
+                <li><a href="#/contact" data-toggle="collapse" data-target=".navHeaderCollapse" class="navList">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+	<div ng-view></div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="js/app.js"></script>
+  <!--Controllers & Services-->
+    <script src="js/controllers/NavbarCtrl.js"></script>
+    <script src="js/controllers/InspirationCtrl.js"></script>
+    <script src="js/controllers/InterpretareCtrl.js"></script>
+    <script src="js/controllers/InvataCtrl.js"></script>
+    <script src="js/controllers/SingleInvataCtrl.js"></script>
+    <script src="js/controllers/ContactCtrl.js"></script>
+    <script src="js/controllers/CliniciCtrl.js"></script>
+    <script src="js/controllers/SingleClinicCtrl.js"></script>
+    <script src="js/services/Request.js"></script>
+    <script src="js/services/Navbar.js"></script>
+    <script src="js/services/MainConf.js"></script>
+    <!--Directives-->
+    <script src="js/directives/footer.js"></script>
+</html>
